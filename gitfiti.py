@@ -298,7 +298,7 @@ def main():
     if match == "gitfiti": 
         match = m
     else: 
-        match = 1
+        match = 2
 
     print ('enter file(s) to load images from (blank if not applicable)')
     img_names = raw_input(">").split(' ')
@@ -322,8 +322,8 @@ def main():
         output = fake_it(image, get_start_date(), username, repo, offset,
                 m*match,git_url=git_url)
 
-    save(output, 'gitfiti.sh')
-    print ('gitfiti.sh saved.')
+    save(output, '_output/gitfiti.sh')
+    print ('gitfiti.sh saved in _output directory.')
     print ('Create a new(!) repo at: {0}new and run it.'.format(git_base))
 
 if __name__ == '__main__':

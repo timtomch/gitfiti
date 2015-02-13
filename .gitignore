@@ -1,2 +1,4 @@
 *.pyc
 gitfiti.sh
+_output/
+_local/
